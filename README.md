@@ -1,4 +1,22 @@
-# Base layout template with Gulp, SCSS and Stylelint
-1. Create a repo using this template
-1. Replace `<your_account>` and `<repo_name>` with your Github username and the new repo name
-    - [DEMO LINK](https://<your_account>.github.io/<repo_name>/)
+# Online Cinema
+In this project, you can choose to watch an interesting movie or series of your favorite genre.
+
+[DEMO LINK](https://wfurs0w.github.io/online-cinema/)
+
+[DESIGN](https://www.figma.com/file/Pdghn846F7yMtoMjLdtrhg/Justice-League?node-id=0%3A1&t=QBiqlIAOLQXQ7VOv-1)
+
+
+## Technologies:
+
+- HTML
+- BEM
+- SCSS
+- JavaScript
+
+Implemented adaptive from 375px using grids, flexes and burger-menu for navigation.
+
+### For interaction:
+
+- Clone repo.
+- Start 'npm install'
+- Start with Live Server.

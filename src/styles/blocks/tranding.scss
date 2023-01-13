@@ -1,0 +1,57 @@
+@import "../utils/_variables";
+@import "../utils/_fonts";
+@import "../blocks/section-title.scss";
+
+.trending {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  margin-bottom: 100px;
+
+  &__shows {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(205px, 205px));
+    gap: 30px;
+
+    &-poster {
+      transition: 0.3s ease filter;
+
+      &:hover {
+        filter: drop-shadow(0px 0px 20px rgba(44, 176, 249, 0.5));
+      }
+    }
+  }
+
+  &__btn {
+    cursor: pointer;
+    width: 141px;
+    height: 50px;
+
+    border: none;
+    border-radius: 100px;
+
+    font-family: 'Mulish' sans-serif;
+    font-weight: 800;
+    transition: 0.3s ease box-shadow;
+
+    background: $blue-gradient;
+    color: $white;
+
+    &:hover {
+      box-shadow: 0px 4px 50px rgba(50, 108, 255, 0.658);
+    }
+  }
+}
+
+@media (min-width: 375px) and (max-width: 996px){
+  .trending {
+    gap: 30px;
+    margin-bottom: 50px;
+
+    &__btn {
+      width: 100px;
+      height: 40px;
+    }
+  }
+}

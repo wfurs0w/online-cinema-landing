@@ -1,0 +1,80 @@
+@import "../utils/variables";
+@import "../utils/fonts";
+
+.register {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 auto;
+  background-image: url(../images/register/register.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 71px 57px;
+  margin-top: 83px;
+  opacity: 0.5;
+  border-radius: 20px;
+
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 64px;
+    max-width: 792px;
+  }
+
+  &__btn {
+    cursor: pointer;
+    margin: 55px 0 60px;
+    padding: 15px 38px;
+
+    border: none;
+    border-radius: 100px;
+
+    font-family: 'Mulish' sans-serif;
+    font-weight: 800;
+    transition: 0.3s ease box-shadow;
+
+    background: $blue-gradient;
+    color: $white;
+
+    &:hover {
+      box-shadow: 0px 4px 50px rgba(50, 108, 255, 0.658);
+    }
+  }
+}
+
+@media (max-width: 1368px) {
+
+  .register__title {
+    font-weight: 700;
+    font-size: 46px;
+    width: 75%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .register {
+    opacity: 1;
+    flex-direction: column;
+    padding: 31px 27px;
+    gap: 20px;
+
+
+    &__title {
+      font-weight: 700;
+      font-size: 22px;
+      width: 75%;
+      text-align: center;
+    }
+
+    &__btn {
+      font-weight: 600;
+      margin: 0;
+      padding: 10px 32px;
+    }
+  }
+}

@@ -1,0 +1,54 @@
+@import "../utils/_variables";
+@import "../utils/_fonts";
+
+.people {
+  margin-bottom: 115px;
+
+  &__circles {
+    margin-top: 40px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+    gap: 52px;
+  }
+
+  &__circle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    &-img {
+      border-radius: 100px;
+      cursor: pointer;
+      transition: 0.3s ease box-shadow;
+
+      &:hover {
+        box-shadow: 0px 4px 50px rgba(76, 176, 243, 0.658);
+      }
+    }
+
+    &-title {
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 20px;
+      transition: 0.3s ease color;
+
+      &:hover {
+        color: #c2c2c2;
+      }
+    }
+  }
+}
+
+@media (min-width: 375px) and (max-width: 996px){
+  .people {
+    margin-bottom: 60px;
+
+    &__circles {
+      margin-top: 30px;
+    }
+  }
+}

@@ -3,11 +3,466 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
-    <link rel="stylesheet" href="./styles/main.scss">
+    <link type="image/x-icon" href="./images/favicon/favicon-32x32.png" rel="shortcut icon">
+    <title>Online Cinema</title>
+    <link rel="stylesheet" href="./styles/main.css">
   </head>
   <body>
-    <h1>Hello Mate Academy</h1>
-    <script type="text/javascript" src="scripts/main.js"></script>
+    <header class="header">
+      <div class="header__container">
+
+        <div class="header__burger" id="burger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+
+        <div class="header__logo">
+          <a href="#">
+            <img
+              class="header__logo-img"
+              src="images/header/logo.svg"
+              alt="logo"
+            >
+          </a>
+        </div>
+
+        <nav class="header__menu" id="menu">
+          <ul class="header__menu-list">
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link header__menu-link_active">Home</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link">TV Shows</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link">Movies</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link">Series</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__icons" id="icons">
+          <a href="#">
+            <img
+              src="images/header/search-icon.svg"
+              alt="search"
+              class="header__icon"
+            >
+          </a>
+
+          <a href="#">
+            <img
+              src="images/header/notification-icon.svg"
+              alt="notification"
+              class="header__icon"
+            >
+          </a>
+
+          <a href="#">
+            <img
+              src="images/header/user-icon.svg"
+              alt="person area"
+              class="header__icon"
+            >
+          </a>
+        </div>
+        <div class="popup" id="popup"></div>
+      </div>
+    </header>
+
+    <section class="banner">
+      <div class="banner__container">
+        <div class="banner__content">
+          <h1 class="banner__title">
+            Zack Snyder's Justice League
+          </h1>
+
+          <div class="banner__info">
+            <div class="banner__info-year">
+              <span>2021</span>
+            </div>
+
+            <div class="banner__info-limit">
+              <span>18+</span>
+            </div>
+
+            <div class="banner__info-duration">
+              <span>4h 2min</span>
+            </div>
+
+            <div class="banner__info-rating">
+              <span>8.8</span>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M3.612 15.443C3.226 15.641 2.788 15.294 2.866 14.851L3.696 10.121L0.172996 6.76501C-0.156004 6.45101 0.0149962 5.87701 0.455996 5.81501L5.354 5.11901L7.538 0.792012C7.735 0.402012 8.268 0.402012 8.465 0.792012L10.649 5.11901L15.547 5.81501C15.988 5.87701 16.159 6.45101 15.83 6.76501L12.307 10.121L13.137 14.851C13.215 15.294 12.777 15.641 12.391 15.443L8 13.187L3.612 15.443Z" fill="#FFB800">
+              </svg>
+            </div>
+          </div>
+
+          <p class="banner__text">
+            Determined to ensure Superman's ultimate sacrifice was not in vain, Bruce Wayne aligns forces with Diana Prince with plans to recruit a team of metahumans to protect the world from an approaching threat of catastrophic proportions.
+          </p>
+
+          <div class="banner__control">
+            <button class="banner__control-btn banner__control-btn-watch">
+              <svg
+                class="banner__control-btn-icon"
+                width="14"
+                height="18"
+                viewBox="0 0 14 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M13.2923 10.3932L2.15764 17.7762C1.21269 18.4021 0 17.6442 0 16.3824V1.61647C0 0.356646 1.21094 -0.403248 2.15764 0.224664L13.2923 7.60763C13.5073 7.74786 13.686 7.95055 13.8103 8.19516C13.9345 8.43977 14 8.71759 14 9.00043C14 9.28328 13.9345 9.5611 13.8103 9.80571C13.686 10.0503 13.5073 10.253 13.2923 10.3932Z" fill="white">
+              </svg>
+              Watch
+            </button>
+            <button class="banner__control-btn banner__control-btn-info">More information</button>
+          </div>
+        </div>
+
+        <div class="banner__poster">
+          <img
+          class="banner__poster-img"
+          src="images/banner/poster.png"
+          alt="Film poster"
+        >
+        </div>
+
+      </div>
+    </section>
+
+    <section class="trending">
+      <h2 class="section__title">
+        <a href="#" class="section__title-link">
+          Trending TV Shows &nbsp; >
+        </a>
+      </h2>
+
+      <div class="trending__shows">
+        <div class="trending__shows-poster">
+          <a href="#">
+            <img src="images/tv-shows/show-1.png" alt="Show"
+            >
+          </a>
+        </div>
+
+        <div class="trending__shows-poster">
+          <a href="#">
+            <img src="images/tv-shows/show-2.png" alt="Show">
+          </a>
+        </div>
+
+        <div class="trending__shows-poster">
+          <a href="#">
+            <img src="images/tv-shows/show-3.png" alt="Show">
+          </a>
+        </div>
+
+        <div class="trending__shows-poster">
+          <a href="#">
+            <img src="images/tv-shows/show-4.png" alt="Show">
+          </a>
+        </div>
+
+        <div class="trending__shows-poster">
+          <a href="#">
+            <img src="images/tv-shows/show-5.png" alt="Show">
+          </a>
+        </div>
+
+        <div class="trending__shows-poster">
+          <a href="#">
+            <img src="images/tv-shows/show-6.png" alt="Show">
+          </a>
+        </div>
+      </div>
+
+      <h2 class="section__title">
+        <a href="#" class="section__title-link">
+          Trending Movies &nbsp; >
+        </a>
+      </h2>
+
+      <div class="trending__shows">
+        <div class="trending__shows-poster">
+          <a href="#">
+            <img src="images/movies/movie-1.png" alt="Movie">
+          </a>
+        </div>
+        <div class="trending__shows-poster">
+          <a href="#">
+            <img src="images/movies/movie-2.png" alt="Movie">
+          </a>
+        </div>
+        <div class="trending__shows-poster">
+          <a href="#">
+            <img src="images/movies/movie-3.png" alt="Movie">
+          </a>
+        </div>
+        <div class="trending__shows-poster">
+          <a href="#">
+            <img src="images/movies/movie-4.png" alt="Movie">
+          </a>
+        </div>
+        <div class="trending__shows-poster">
+          <a href="#">
+            <img src="images/movies/movie-5.png" alt="Movie">
+          </a>
+        </div>
+        <div class="trending__shows-poster">
+          <a href="#">
+            <img src="images/movies/movie-6.png" alt="Movie">
+          </a>
+        </div>
+      </div>
+
+      <button class="trending__btn">See more</button>
+    </section>
+
+    <section class="genres">
+      <h2 class="section__title">
+        <a href="#" class="section__title-link">
+          Popular Genres &nbsp; >
+        </a>
+      </h2>
+
+      <div class="genres__cards">
+        <div class="genres__card genres__card_romance">
+          <img src="images/genres/hearts.svg" alt="Hearts">
+          <h3 class="genres__card-title">Romance</h3>
+        </div>
+
+        <div class="genres__card genres__card_drama">
+          <img src="images/genres/drama.svg" alt="Drama">
+          <h3 class="genres__card-title">Drama</h3>
+        </div>
+
+        <div class="genres__card genres__card_historical">
+          <img src="images/genres/historical.svg" alt="Historical"
+          >
+          <h3 class="genres__card-title">Historical</h3>
+        </div>
+
+        <div class="genres__card genres__card_action">
+          <img src="images/genres/action.svg" alt="Action">
+          <h3 class="genres__card-title">Action</h3>
+        </div>
+
+        <div class="genres__card genres__card_sci-fi">
+          <div class="genres__card-icon">
+            <img
+            class="genres__card-rocket"
+            src="images/genres/rocket.svg"
+            alt="Sci-fi"
+          >
+          </div>
+          <h3 class="genres__card-title">Sci-fi</h3>
+        </div>
+
+        <div class="genres__card genres__card_horror">
+          <img src="images/genres/ghost.svg" alt="Horror">
+          <h3 class="genres__card-title">Horror</h3>
+        </div>
+        <div class="genres__card genres__card_comedy">
+          <img src="images/genres/smile.svg" alt="Comedy">
+          <h3 class="genres__card-title">Comedy</h3>
+        </div>
+
+        <div class="genres__card genres__card_documentary">
+          <img src="images/genres/castle.svg" alt="Documentary">
+          <h3 class="genres__card-title">Documentary</h3>
+        </div>
+      </div>
+    </section>
+
+    <section class="people">
+      <h2 class="section__title">
+        <a href="#" class="section__title-link">
+          Popular Actors & Directors &nbsp; >
+        </a>
+      </h2>
+
+      <div class="people__circles">
+        <div class="people__circle">
+          <img
+            class="people__circle-img"
+            src="images/actors/actor-1.png"
+            alt="Actor"
+          >
+          <h3 class="people__circle-title">Samantha Bowen</h3>
+        </div>
+
+        <div class="people__circle">
+          <img
+            class="people__circle-img"
+            src="images/actors/actor-2.png"
+            alt="Actor"
+          >
+          <h3 class="people__circle-title">Rhys Birch</h3>
+        </div>
+
+        <div class="people__circle">
+          <img
+            class="people__circle-img"
+            src="images/actors/actor-3.png"
+            alt="Actor"
+          >
+          <h3 class="people__circle-title">James Holloway</h3>
+        </div>
+
+        <div class="people__circle">
+          <img
+            class="people__circle-img"
+            src="images/actors/actor-4.png"
+            alt="Actor"
+          >
+          <h3 class="people__circle-title">Joshua Walton</h3>
+        </div>
+
+        <div class="people__circle">
+          <img
+            class="people__circle-img"
+            src="images/actors/actor-5.png"
+            alt="Actor"
+          >
+          <h3 class="people__circle-title">Patrick Elliott</h3>
+        </div>
+        
+        <div class="people__circle">
+          <img
+            class="people__circle-img"
+            src="images/actors/actor-6.png"
+            alt="Actor"
+          >
+          <h3 class="people__circle-title">Morgan O'Neill</h3>
+        </div>
+      </div>
+    </section>
+
+    <section class="publicity">
+      <div class="publicity__poster">
+        <img
+          class="publicity__poster-img publicity__poster-first"
+          src="images/publicity/coming-soon-1.png"
+          alt="Poster"
+        >
+        <img
+          class="publicity__poster-img publicity__poster-last"
+          src="images/publicity/coming-soon-2.png"
+          alt="Poster"
+        >
+      </div>
+    </section>
+
+    <section class="register">
+      <h2 class="register__title">
+        Are You New Here ? Don’t&nbsp;wait, Register Now.
+      </h2>
+
+      <button class="register__btn">
+        Register Now
+      </button>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__logo">
+          <a href="#">
+            <img src="images/header/logo.svg" alt="logo">
+          </a>
+        </div>
+
+        <div class="footer__boxes">
+          <ul class="footer__boxes-list">
+            <li class="footer__boxes-item">
+              <a class="footer__boxes-link" href="#">
+                Voice over and Subtitle
+              </a>
+            </li>
+            <li class="footer__boxes-item">
+              <a class="footer__boxes-link" href="#">
+                Media Center
+              </a>
+            </li>
+            <li class="footer__boxes-item">
+              <a class="footer__boxes-link" href="#">
+                Privacy
+              </a>
+            </li>
+            <li class="footer__boxes-item">
+              <a class="footer__boxes-link" href="#">
+                Contact us
+              </a>
+            </li>
+          </ul>
+
+          <ul class="footer__boxes-list">
+            <li class="footer__boxes-item">
+              <a class="footer__boxes-link" href="#">
+                Voice Description
+              </a>
+            </li>
+            <li class="footer__boxes-item">
+              <a class="footer__boxes-link" href="#">
+                Investor Relations
+              </a>
+            </li>
+            <li class="footer__boxes-item">
+              <a class="footer__boxes-link" href="#">
+                Legal Provisions
+              </a>
+            </li>
+          </ul>
+
+          <ul class="footer__boxes-list">
+            <li class="footer__boxes-item">
+              <a class="footer__boxes-link" href="#">
+                Help Center
+              </a>
+            </li>
+            <li class="footer__boxes-item">
+              <a class="footer__boxes-link" href="#">
+                Job Opportunities
+              </a>
+            </li>
+            <li class="footer__boxes-item">
+              <a class="footer__boxes-link" href="#">
+                Cookies Preferences
+              </a>
+            </li>
+          </ul>
+
+          <ul class="footer__boxes-list">
+            <li class="footer__boxes-item">
+              <a class="footer__boxes-link" href="#">
+                Gift Cards
+              </a>
+            </li>
+            <li class="footer__boxes-item">
+              <a class="footer__boxes-link" href="#">
+                Terms of Use
+              </a>
+            </li>
+            <li class="footer__boxes-item">
+              <a class="footer__boxes-link" href="#">
+                Corporate Informations
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./scripts/main.js"></script>
   </body>
 </html>

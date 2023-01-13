@@ -1,0 +1,41 @@
+@import "../utils/_variables";
+@import "../utils/_fonts";
+
+.footer {
+  margin-top: 121px;
+  display: flex;
+  background-color: #101012;
+  padding: 70px 0;
+
+  &__container {
+    max-width: 1436px;
+    margin: 0 auto;
+    display: flex;
+    gap: 58px;
+  }
+
+  &__boxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 52px;
+
+    &-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    &-link {
+      font-weight: 600;
+      font-size: 18px;
+      text-decoration: none;
+      color: #c2c2c2;
+      transition: 0.3s ease color;
+
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+}

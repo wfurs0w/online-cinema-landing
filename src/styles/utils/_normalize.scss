@@ -1,0 +1,31 @@
+@import "./_fonts";
+@import "./_variables";
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+section,
+h1,
+h2,
+h3,
+p,
+img,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: $white;
+  background: $black;
+  font-family: 'Mulish', sans-serif;
+}
+
+section {
+  max-width: 1440px;
+  padding: 0 20px 0 20px;
+  margin: 0 auto;
+}

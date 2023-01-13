@@ -1,0 +1,52 @@
+@import "../utils/fonts";
+@import "../utils/variables";
+
+
+.section__title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 20px;
+  position: relative;
+  padding-left: 19px;
+
+  &::before {
+    content: '';
+    background: $blue-gradient;
+    border-radius: 50px;
+    display: block;
+    position: absolute;
+    width: 8px;
+    height: 34px;
+    left: 0;
+    top: calc(50% - 17px);
+  }
+
+  &-link {
+    text-decoration: none;
+    color: $white;
+    transition: 0.3s ease color;
+
+    &:hover {
+      color:  #269dff;
+    }
+  }
+}
+
+@media (min-width: 375px) and (max-width: 996px){
+  .section__title {
+    font-size: 20px;
+    line-height: 8px;
+
+    &::before {
+      content: '';
+      background: $blue-gradient;
+      border-radius: 50px;
+      display: block;
+      position: absolute;
+      width: 6px;
+      height: 26px;
+      left: 0;
+      top: calc(50% - 13px);
+    }
+  }
+}
