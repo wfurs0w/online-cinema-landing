@@ -1,7 +1,7 @@
 # Online Cinema
 In this project, you can choose to watch an interesting movie or series of your favorite genre.
 
-[DEMO LINK](https://wfurs0w.github.io/online-cinema/)
+[DEMO LINK](https://wfurs0w.github.io/online-cinema-tt/)
 
 [DESIGN](https://www.figma.com/file/Pdghn846F7yMtoMjLdtrhg/Justice-League?node-id=0%3A1&t=QBiqlIAOLQXQ7VOv-1)
 
